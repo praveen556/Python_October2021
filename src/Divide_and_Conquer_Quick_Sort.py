@@ -1,3 +1,5 @@
+from numpy  import random #This statement is mandatory if we need to generate a  random number
+
 class Sort:
 #Splitting the Array
     def quicksort(nums, start_index, end_index):
@@ -10,8 +12,8 @@ class Sort:
     def partition(nums, start_index, end_index):
         i = start_index
         j = end_index -1
-        pivot = nums[start_index]
-
+#        pivot = nums[start_index] #Appraoch1 Assuming the First number from the array as Middle number
+        pivot = random.randint(0,end_index-1) #Appraoch2 Assumming a random number from the array as Middle Numbner
         while (i < j):
             while i < end_index and nums[i] < pivot:
                 i += 1
