@@ -13,7 +13,7 @@ class Sums:
                 #return [nums[i],nums[j]] #If values are needed
                 return_list.append([nums[i],nums[j]]) #to capture all the combinations
                 i+=1
-                j-=1
+                j-=1 
         return return_list
 
 print(Sums.sums_2([1,2,3,4,5,6],9))
